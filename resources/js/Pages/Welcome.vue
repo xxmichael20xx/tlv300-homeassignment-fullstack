@@ -10,7 +10,7 @@ import Table from "@/Components/Domain/Table.vue";
 
 const swal = inject('$swal');
 const form = useForm({
-    domain: "",
+    domain: "amazon.com",
     type: ""
 });
 
@@ -243,7 +243,7 @@ function formatNameServers(hostnames) {
     const value = hostnames.toString()
 
     if (value.length > 25) {
-        return value.substring(0, 25) + '...';
+        return value.substring(0, 22) + '...';
     }
 
     return value;
